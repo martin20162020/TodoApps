@@ -1,0 +1,228 @@
+body{
+  background:linear-gradient(90deg,#4d546b 18%, white 7%);
+  color:#1f3553;
+  margin-left: 50px;
+  margin-top: 70px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color:#4d546b;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+a:hover, .fas:hover{
+  color:#4d546b;
+}
+
+h1{
+  position:absolute;
+  margin:0;
+  top:1rem;
+  left: 1rem;
+  font-size: 30px;
+  text-align:left;
+  color:white;
+  max-width: 90px;
+}
+
+.todo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height: 20px;
+  width: 19rem;
+  padding: 15px;
+  margin-top: 1.5rem;
+  box-shadow: 1px 1px 4px 2px #d3e0ee;
+  border-radius: 5px;
+  transition: 1s;
+  margin-bottom: 1rem;
+}
+
+.todo:hover{
+  box-shadow: 1px 1px 4px 4px #d3e0ee;
+  transition: .4s;
+}
+
+.todo-item{
+  display:flex;
+  font-size: 18px;
+  font-weight: bold;
+  color:#4d546b;
+}
+
+.todo-list{
+  list-style-type: none;
+  min-width:30%;
+}
+
+.todo li{
+  flex:1;
+}
+
+.fas{
+  color:#d3e0ee;
+}
+
+button:hover.delete, 
+button:hover.edit,
+.fas:hover{
+  transition:.5s;
+  color:#4d546bd5;
+}
+
+button{
+  margin: 0px 0px 0 10px;
+  border-radius: 5px;
+  color: #d3e0ee;
+  background-color: #4d546bd5;
+  border: 1px solid #4d546bb9;
+  box-shadow: 1px 1px 5px #4d546bb9;
+  letter-spacing: 2px;
+  font-size: 12px;
+  height: 2rem;
+  width: 6rem;
+  font-family: 'Cinzel', serif;
+  outline:none;
+  z-index: 0;
+}
+
+button:hover{
+  transition:.5s;
+  background-color: #e2e8f0;
+  color:#4d546bd5;
+  cursor:pointer
+}
+
+.deleteItem{
+  opacity: .2;
+}
+
+.author{
+  font-size: 12px;
+  color:rgb(158, 158, 158);
+  margin:1px;
+  font-weight: lighter;
+}
+
+p{
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.errors{
+  color:#4d546bb9;
+  font-size:20px;
+}
+
+/* media queries */
+@media screen and (max-width:1920px){
+.todo{
+  width: 50rem;
+  margin-left: 32rem;
+}
+}
+
+@media screen and (max-width:1800px){
+  
+  .todo{
+    width: 40rem;
+    margin-left: 29rem;
+    transition: 1s;
+    margin-bottom: 1rem;
+  }
+  }
+
+@media screen and (max-width:1750px){
+  .todo{
+    width: 40rem;
+    margin-left: 35rem;
+    transition: 1s;
+    margin-bottom: 1rem;
+  }
+  }
+
+@media screen and (max-width:1650px){
+  .todo{
+    width: 40rem;
+    margin-left: 29rem;
+    transition: 1s;
+    margin-bottom: 1rem;
+  }
+  }
+  @media screen and (max-width:1500px){
+    .todo{
+      width: 40rem;
+      margin-left: 25rem;
+      transition: 1s;
+      margin-bottom: 1rem;
+    }
+    }
+
+@media screen and (max-width:1175px){
+  .todo{
+    margin-left: 23rem;
+    width: 34rem;
+  }
+ }
+
+ @media screen and (max-width:1090px){
+  .todo{
+    margin-left: 19rem;
+    width: 30rem;
+  }
+
+  button{
+    width:3rem;
+    height:1.5rem;
+    font-size: 10px;
+    margin: 5px 5px;
+  }
+
+  .extra{
+    display:none
+  }
+ }
+ 
+@media screen and (max-width:900px){
+  h1, .name{
+    font-size:20px;
+    background-color: #4d546b;
+    padding: .5rem;
+    border-radius: .3rem;
+    border-bottom-left-radius: 1rem;
+}
+.todo{
+  margin-left: 9rem;
+}
+  body{
+    background:linear-gradient(90deg,#ffffff 18%, white 7%);
+  }
+}
+
+@media screen and (max-width:950px){
+  h1, .name{
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:744px){
+  button{
+      width:1.5rem;
+      height:1.5rem;
+  }
+
+  h2{
+    position:relative;
+    left:10rem;
+    top:5rem;
+
+  }
+
+  .todo{
+    margin-left: 5rem;
+  }
+}
